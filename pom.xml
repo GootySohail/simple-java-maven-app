@@ -26,7 +26,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
           <configuration>
-             <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
+             <webXml>src/main/java/resources/webapp/WEB-INF</webXml>
           </configuration>
         </plugin>
       </plugins>
