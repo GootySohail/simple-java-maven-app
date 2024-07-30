@@ -16,7 +16,7 @@
     </dependency>
   </dependencies>
   <properties>
-    <failOnMissingWebXml>false</failOnMissingWebXml> 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <build>
     <pluginManagement>
@@ -26,7 +26,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.13.0</version>
           <configuration>
-             <webXml>WebContent\WEB-INF\web.xml</webXml>
+            <release>17</release>
           </configuration>
         </plugin>
       </plugins>
@@ -71,18 +71,5 @@
         </executions>
       </plugin>
     </plugins>
-    <build>
-    <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.4.0</version>
-            <configuration>
-                <failOnMissingWebXml>false</failOnMissingWebXml>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
-
   </build>
 </project>
