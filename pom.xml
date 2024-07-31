@@ -12,26 +12,29 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- Define default plugin versions and configurations here -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.1</version>
+                    <configuration>
+                        <source>8</source> <!-- Specify the Java source version -->
+                        <target>8</target> <!-- Specify the Java target version -->
+                    </configuration>
                 </plugin>
-                <!-- Add other plugin versions if needed -->
+                <!-- Other plugins if needed -->
             </plugins>
         </pluginManagement>
         <plugins>
-            <!-- Define plugins that are applied during the build process here -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.4.0</version>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
-            <!-- Add other plugins as needed -->
+            <!-- Other plugins -->
         </plugins>
     </build>
 
