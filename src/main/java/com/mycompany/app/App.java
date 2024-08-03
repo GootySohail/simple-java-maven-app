@@ -1,12 +1,7 @@
 package com.mycompany.app;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import org.junit.jupiter.api.Test;
-
-public class AppTest {
-
-    @Test
-    public void testApp() {
-        assertTrue(true);
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
     }
 }
